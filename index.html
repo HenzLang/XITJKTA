@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar dengan Dropdown</title>
-    <!-- Tambahkan Bootstrap CSS -->
+    <title>Navbar dan Isi HTML</title>
+    <!-- Tambahkan Bootstrap CSS (Opsional) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tambahkan CSS khusus untuk tampilan navbar -->
+    <style>
+        /* Gaya untuk navbar */
+        .navbar-custom {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        /* Gaya untuk konten di dalam container */
+        .content {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
     <a class="navbar-brand" href="#">Logo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tentang</a>
+                <a class="nav-link" href="#">Tentang Kami</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Layanan
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Layanan 1</a>
-                    <a class="dropdown-item" href="#">Layanan 2</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Layanan Lainnya</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Layanan</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Kontak</a>
@@ -40,7 +46,14 @@
     </div>
 </nav>
 
-<!-- Tambahkan Bootstrap JS (jQuery diperlukan) -->
+<!-- Isi Konten -->
+<div class="container content">
+    <h1>Selamat Datang di Situs Kami</h1>
+    <p>Ini adalah contoh situs web dengan navbar yang keren.</p>
+    <p>Silakan tambahkan konten Anda di sini.</p>
+</div>
+
+<!-- Tambahkan Bootstrap JS (Opsional) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
